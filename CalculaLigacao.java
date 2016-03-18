@@ -12,7 +12,6 @@ public class CalculaLigacao {
     private static int HORAS_SEM_DESCONTO_POR_DIA = HORA_INICIO_DESCONTO - HORA_FINAL_DESCONTO;
     private static float DESCONTO_MAIS_UMA_HORA = 0.85f; // desconto de 15 por cento
 
-    //   (7,9)  (7,19)  (9,17)  (9,19)
     public static float calculaTarifa(int diai, int mesi, int anoi, int horai, int minutoi, int segundoi, int diaf, int mesf, int anof, int horaf, int minutof, int segundof) {
         if (diai == diaf && mesi == mesf && anoi == anof) { // mesmo dia, mes e ano
             if (horai < HORA_INICIO_DESCONTO && horai >= HORA_FINAL_DESCONTO) { // hora inicial fora do horario do desconto 8 < hora < 18
