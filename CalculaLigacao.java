@@ -214,7 +214,7 @@ public class CalculaLigacao {
      * @return o valor de um dia inteiro de ligação
      */
     private static float getPreçoDia() {
-        return 600 * CUSTO_LIGACAO_DESCONTO + 840 * CUSTO_LIGACAO;
+        return 840 * CUSTO_LIGACAO_DESCONTO + 600 * CUSTO_LIGACAO;
     }
 
     private static float calculaMinutos(int horai, int minutoi, int segundoi, int horaf, int minutof, int segundof) {
